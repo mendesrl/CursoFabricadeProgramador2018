@@ -1,41 +1,24 @@
-html 5
-js 5
-css 3
+Aprenderemos
+->html 5
+->js 5
+->css 3
 
+-------------------------------1º Topico-----------------------------------------------------
+HTML: uma linguagem de marcação
+CSS: uma folha de estilo em cascata
+JS: gera o comportamento
 
-html uma linguagem de marcação
+-------------------------------2º Topico------------------------------------------------------
+The Document Object : "document." Quando queremos acessar alguma informação que esta no html 
+getElementById() : retorna o elemento onde o ID está atribuido
+The parseFloat() : essa função parseia a string em um ponto flutuante
+Input Type Number : The <input type="number"> define como entrada numeros porém não significa que seu valor tambem é numerico
 
-css - folha de estilo em cascata
-
-js - gera o comportamento
-
-document. queremos acessar akguma informação que esta no html 
-
-
-getElementbyid - ver (pegar um elemento pelo id)
-
-
-sempre que for somar um numero , é preciso especificar que ele é um numero pois ele enyende que é um texto , sem o parse float ele concatena as STRINGS 11
-se utiliza o parse float ele soma ., pois foi especificado que um numero 1 esta sendo somado com o numero 2;
-
-input number = só vai aceitar numeros , porem nao significa que o valor dele é numero
-
-parseint/parsefloat
-
-IMPRIMIR NA TELA :  document.getElementById("total").value = divs;
-
-<br> pula linha (quebra de linha) (broken row)
-
+-------------------------------3º Topico------------------------------------------------------
+<br> pula linha (quebra de linha)
 style dentro de label= <label style="color:crimson">Numero 1</label>
-
 font-weight : estilo , negrito , italico
 
-!important = estudar
+!important = Uma declaração de estilo com !important ignora qualquer hierarquia e prevalece sobre todas as demais, é a de mais alta prioridade.
 
-
-style é maior que classe que é maior que a tag (label no caso)
-
-
-.classe (na classe usa ponto)
-
-#id(ids)
+style> é maior que classe> que é maior que a tag (label no caso) = style>class>tag
