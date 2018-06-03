@@ -1,0 +1,41 @@
+html 5
+js 5
+css 3
+
+
+html uma linguagem de marcação
+
+css - folha de estilo em cascata
+
+js - gera o comportamento
+
+document. queremos acessar akguma informação que esta no html 
+
+
+getElementbyid - ver (pegar um elemento pelo id)
+
+
+sempre que for somar um numero , é preciso especificar que ele é um numero pois ele enyende que é um texto , sem o parse float ele concatena as STRINGS 11
+se utiliza o parse float ele soma ., pois foi especificado que um numero 1 esta sendo somado com o numero 2;
+
+input number = só vai aceitar numeros , porem nao significa que o valor dele é numero
+
+parseint/parsefloat
+
+IMPRIMIR NA TELA :  document.getElementById("total").value = divs;
+
+<br> pula linha (quebra de linha) (broken row)
+
+style dentro de label= <label style="color:crimson">Numero 1</label>
+
+font-weight : estilo , negrito , italico
+
+!important = estudar
+
+
+style é maior que classe que é maior que a tag (label no caso)
+
+
+.classe (na classe usa ponto)
+
+#id(ids)
