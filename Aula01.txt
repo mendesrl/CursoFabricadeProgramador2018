@@ -1,0 +1,24 @@
+Aprenderemos
+->html 5
+->js 5
+->css 3
+
+-------------------------------1º Topico-----------------------------------------------------
+HTML: uma linguagem de marcação
+CSS: uma folha de estilo em cascata
+JS: gera o comportamento
+
+-------------------------------2º Topico------------------------------------------------------
+The Document Object : "document." Quando queremos acessar alguma informação que esta no html 
+getElementById() : retorna o elemento onde o ID está atribuido
+The parseFloat() : essa função parseia a string em um ponto flutuante
+Input Type Number : The <input type="number"> define como entrada numeros porém não significa que seu valor tambem é numerico
+
+-------------------------------3º Topico------------------------------------------------------
+<br> pula linha (quebra de linha)
+style dentro de label= <label style="color:crimson">Numero 1</label>
+font-weight : estilo , negrito , italico
+
+!important = Uma declaração de estilo com !important ignora qualquer hierarquia e prevalece sobre todas as demais, é a de mais alta prioridade.
+
+style> é maior que classe> que é maior que a tag (label no caso) = style>class>tag

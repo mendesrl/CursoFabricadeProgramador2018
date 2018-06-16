@@ -1,5 +1,5 @@
-class TelaLogin 
-{
+class TelaRegister{
+
     validar()
     {
         //Mensagens de erro
@@ -7,6 +7,9 @@ class TelaLogin
 
         //ler o nome do usuario
         var nome = document.getElementById("nome").value;
+
+        //ler o username do usuario
+        var nomeusuario = document.getElementById("nomeusuario").value;
 
         //ler a senha do usuario
         var senha = document.getElementById("senha").value;
@@ -18,15 +21,18 @@ class TelaLogin
                 errorMessages +="Preencha o campo com seu NOME \n";
             }
         
+
+        /////////////////////////--Validar o nome do usuario
+
+        if(nomeusuario=="")//Se o campo nome não estiver preenchido retorna erro
+            {
+                errorMessages +="Preencha o campo com um Nome de Usuario \n";
+            }
+        
         /////////////////////////--validar senha
         if(senha=="")//Se o campo da senha não estiver preenchido retorna erro
             {
-                errorMessages +="Informe uma senha\n";
-            }
-
-        if(senha!="123")//Se a senha for diferente de 123 , a senha está incorreta
-            {
-                errorMessages +="senha incorreta\n";
+                errorMessages +="Informe uma SENHA\n";
             }
 
         /////////////////////////--validar todos os campos
@@ -34,7 +40,7 @@ class TelaLogin
             {
                     window.alert(errorMessages);
             }
+
     }
 }
-//Instanciação do objeto
-var login = new TelaLogin;
+var save = new TelaRegister;
