@@ -1,0 +1,26 @@
+/*Todas as div's com essas configurações*/
+div{
+    padding: 10px;
+}
+
+/*Todo input com o tipo texto*/
+input[type="text"]{width: 100%;}
+
+/*Todo input com o tipo texto*/
+input[type="email"]{width: 100%;}
+
+/*Config para H1*/
+h1{
+    text-align: center;
+}
+
+/*Config para o body*/
+body{
+    font-family: sans-serif;
+
+}
+
+/*FORMULARIO*/
+form{
+    
+}

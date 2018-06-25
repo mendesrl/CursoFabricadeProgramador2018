@@ -1,0 +1,85 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+        <!-- TÍTULO -->
+        <h1>Cadastro de Cliente</h1>
+
+        <!-- FORMULÁRIO -->
+        <form>
+
+            <!-- NOME -->
+            <div>
+                <input type="text" placeholder="Name">
+            </div>
+            
+            <!-- EMAIL -->
+            <div>
+                <input type="email" placeholder="E-mail">
+            </div>
+
+            <!-- RADIO (SEXO)-->
+            <div>
+                <label for="MASC">Masculino</label>
+                <input type="radio" name="sexo" id="MASC">
+                <label for="FEM">Feminino</label>
+                <input type="radio" name="sexo" id="FEM">
+            </div>
+
+            <!-- CONJUNTO DE ELEMENTOS (Cursos)-->
+            <fieldset>
+                <legend>Curso de Interesse</legend>
+                <div>
+                    <input type="checkbox" id="UM"><label for="UM">Curso 1</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="DOIS"><label for="DOIS">Curso 2</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="TRES"><label for="TRES">Curso 3</label>
+                </div>
+            </fieldset>
+
+            <!-- SELEÇÃO DE OPÇÕES (LISTA DOS ESTADOS)-->
+            <div>
+                <label for="ESTADOS">Estado: </label>
+                <select id="ESTADOS">
+                        <option value="">Selecionar...</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                </select>
+            </div>
+
+            <!-- CARREGAMENTO DE FOTO -->
+            <div>
+                <label>Foto: </label>
+                <input type="file">
+            </div>
+
+            <!-- DATA -->
+            <div>
+                <label for="DATA">Data Nascimento</label>
+                <input type="date" id="DATA">
+            </div>
+            <!-- BOTÃO DE SALVAR -->
+            <div>
+                <button>Salvar</button>
+            </div>
+
+
+
+
+
+
+        </form>
+</body>
+</html>

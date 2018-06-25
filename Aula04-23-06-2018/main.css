@@ -1,0 +1,86 @@
+/* MENU */
+nav{
+    width: 20%;/*Largura da barra de navegação*/
+    background-color: #09a3c6;
+    text-align: center;
+    height: 100%;
+    padding: 2%;
+    box-shadow: 5px 0px 10px gray;/*largura , altura e esfuma*/
+    float: left;
+    
+}
+
+/*Lista da Barra de Navegação*/
+nav li{ 
+    list-style: none;
+    padding: 4%;
+}
+
+/*Quando passa o mouse em cima*/
+nav li:hover
+{
+    background-color: #0d6579;
+}
+
+/*Por padrão o UL tem padding*/ 
+nav ul{padding: 0%;}
+
+/*Links da Barra de navegação*/
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    
+}
+
+/*Fornatação do h2*/
+nav h2{
+    font-family: sans-serif;
+    color: white;
+}
+
+/*Corpo do Arquivo*/
+body{
+    margin: 0%;
+    font-family: sans-serif;
+}
+
+/*//////// Conteudo da pagina principal ////////*/
+
+main{
+    float: right;
+    width: 75%;/*O que sobrou depois do NAV*/
+}
+
+/*Formulario*/
+main form{
+    text-align: center;
+}
+
+/*Formatação das Entradas (email e nome)*/
+main form input{
+    width: 60%;
+    height: 30px;
+    margin: 1%;
+    padding: 10px;
+}
+
+main form div input{
+    width: 5%;
+    height: 15px;
+}
+
+main form div{
+    width: 60%;
+    text-align: left;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.data{
+    text-align: left;
+    width: 25%;
+   
+
+}

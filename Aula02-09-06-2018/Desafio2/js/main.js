@@ -2,26 +2,26 @@ class TelaLogin
 {
     validar()
     {
-        //Mensagens de erro
-        var errorMessages = "";
-
         //ler o nome do usuario
-        var nome = document.getElementById("nome").value;
+        var nomeusuario = document.getElementById("nomeusuario").value;
 
         //ler a senha do usuario
         var senha = document.getElementById("senha").value;
 
         /////////////////////////--Validar o nome
 
-        if(nome=="")//Se o campo nome não estiver preenchido retorna erro
+        if(nomeusuario=="")//Se o campo nome não estiver preenchido retorna erro
             {
-                errorMessages +="Preencha o campo com seu NOME \n";
+                document.getElementById("erroUsername").innerText = "Preencha o campo com seu NOME";
+                document.getElementById("alert").style.display = "inline";
+                //errorMessages +="Preencha o campo com seu NOME \n";
             }
         
         /////////////////////////--validar senha
         if(senha=="")//Se o campo da senha não estiver preenchido retorna erro
             {
-                errorMessages +="Informe uma senha\n";
+                document.getElementById("erroPassword").innerText = "Escolha uma senha";
+                document.getElementById("alert").style.display = "inline";
             }
 
         if(senha!="123")//Se a senha for diferente de 123 , a senha está incorreta
