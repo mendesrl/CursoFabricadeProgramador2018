@@ -80,7 +80,13 @@ main form div{
 
 .data{
     text-align: left;
-    width: 25%;
-   
+    width: 25%;}
 
+.button{
+    text-align: center;
+}
+
+#foto
+{
+    width: 80%;
 }

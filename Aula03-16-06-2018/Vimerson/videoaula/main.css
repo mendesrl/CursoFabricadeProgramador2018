@@ -1,3 +1,58 @@
+
+/*////////////////////////////*MENU/////////////////////////////////////*/
+
+/*Menu de Navegação*/
+nav{
+    background-color: rgb(9,163,198);
+    float: left;
+    width: 30%;
+    height: 100%;
+    box-shadow: 5px 0px 10px gray;
+    color: white;
+}
+
+/*Lista dos conteudos no menu de navegação*/
+nav li{
+    color: white;
+    list-style: none;
+    padding-top: 5px;
+}
+
+/*Lista Desordenada*/
+nav ul{
+    padding: 0px;
+}
+
+/*Ao passar o mouse no menumuda a cor*/
+nav li:hover
+{
+    background-color: steelblue;
+}
+
+/*Links*/
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/*////////////////////////////*FORMULARIO/////////////////////////////////////*/
+main{
+    float: right;
+    width: 70%;
+}
+
+form{
+    width: 70%;
+    margin: auto;/*Ajusta a margem da pagina*/
+}
+
 /*Todas as div's com essas configurações*/
 div{
     padding: 10px;
@@ -9,6 +64,8 @@ input[type="text"]{width: 100%;}
 /*Todo input com o tipo texto*/
 input[type="email"]{width: 100%;}
 
+
+
 /*Config para H1*/
 h1{
     text-align: center;
@@ -17,10 +74,19 @@ h1{
 /*Config para o body*/
 body{
     font-family: sans-serif;
+    margin: 0%;
 
 }
 
-/*FORMULARIO*/
-form{
+
+/*Classe que alinha o botão e o H1 ao centro*/
+.alinCent{
+    text-align: center;
     
+}
+
+button{
+    background-color: rgb(9,163,198);
+    padding: 10px 20px;
+    color: white;
 }
