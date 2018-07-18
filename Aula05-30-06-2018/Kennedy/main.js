@@ -1,42 +1,32 @@
-class JogodaVelha
+function confeririJogo()
 {
-    
-    /*Função que confere o jogo*/
-    compara()
+    setTimeout( ()=> 
     {
-        //INICIO DO SET
-        setTimeout( ()=> 
-        {
-            ///////////////////--DECLARAÇÃO DAS VARIAVEIS DO JOGO--////////////////////////////
-            var cel1 = document.getElementById("cel1").value;
-            var cel2 = document.getElementById("cel2").value;   
-            var cel3 = document.getElementById("cel3").value;
-            var cel4 = document.getElementById("cel4").value;
-            var cel5 = document.getElementById("cel5").value;
-            var cel6 = document.getElementById("cel6").value;
-            var cel7 = document.getElementById("cel7").value;
-            var cel8 = document.getElementById("cel8").value;
-            var cel9 = document.getElementById("cel9").value;
-            ///////////////////--DECLARAÇÃO DOS JOGADORES--////////////////////////////
-            var player1 = document.getElementById("player1").value;
-            var player2 = document.getElementById("player2").value;
+        ///////////////////--DECLARAÇÃO DAS VARIAVEIS DO JOGO--////////////////////////////
+        var cel1 = document.getElementById("cel1").value;
+        var cel2 = document.getElementById("cel2").value;   
+        var cel3 = document.getElementById("cel3").value;
+        var cel4 = document.getElementById("cel4").value;
+        var cel5 = document.getElementById("cel5").value;
+        var cel6 = document.getElementById("cel6").value;
+        var cel7 = document.getElementById("cel7").value;
+        var cel8 = document.getElementById("cel8").value;
+        var cel9 = document.getElementById("cel9").value;
 
-            
-
-            ///////////////////--PRIMEIRA LINHA--////////////////////////////        
+///////////////////--PRIMEIRA LINHA--////////////////////////////        
 
                 /*Compara a Primeira linha e calula*/
                 if(cel1 !="" && cel1 == cel2 && cel2 == cel3)
                 {
                     if(cel3 == "x" || cel3 == "X")
                     {
-                        window.alert(player1 + " é o VENCEDOR" );
-                        location.reload();
+                        window.alert(cel3 + " é o VENCEDOR" );
+                        limparCampos();
                     }
                     else if (cel3 == "o" || cel3 == "O")
                     {
                         window.alert(player2 + " é o VENCEDOR" );
-                        location.reload();
+                        limparCampos();
                     }
                     
                 }
@@ -46,15 +36,13 @@ class JogodaVelha
                 /*Compara a segunda linha e calula*/
                 else if(cel4 !="" && cel4 == cel5 && cel5 == cel6)
                 {
-                    if(cel6 == "x" || cel6 == "X")
-                    {
-                        window.alert(player1 + " é o VENCEDOR" );
-                        location.reload();
+                    confereGanhador(cel4);
+                        limparCampos();
                     }
                     else if (cel6 == "o" || cel6 == "O")
                     {
                         window.alert(player2 + " é o VENCEDOR" );
-                        location.reload();
+                        limparCampos();
                     }
                 }
             
@@ -66,12 +54,12 @@ class JogodaVelha
                     if(cel9 == "x" || cel9 == "X")
                     {
                         window.alert(player1 + " é o VENCEDOR" );
-                        location.reload();
+                        limparCampos();
                     }
                     else if (cel9 == "o" || cel9 == "O")
                     {
                         window.alert(player2 + " é o VENCEDOR" );
-                        location.reload();
+                        limparCampos();
                     }
                 }
 
@@ -83,12 +71,12 @@ class JogodaVelha
                     if(cel7 == "x" || cel7 == "X")
                     {
                         window.alert(player1 + " é o VENCEDOR" );
-                        location.reload();
+                        limparCampos();
                     }
                     else if (cel7 == "o" || cel7 == "O")
                     {
                         window.alert(player2 + " é o VENCEDOR" );
-                        location.reload();
+                        limparCampos();
                     }
                 }
 
@@ -100,12 +88,12 @@ class JogodaVelha
                     if(cel8 == "x" || cel8 == "X")
                     {
                         window.alert(player1 + " é o VENCEDOR" );
-                        location.reload();
+                        limparCampos();
                     }
                     else if (cel8 == "o" || cel8 == "O")
                     {
                         window.alert(player2 + " é o VENCEDOR" );
-                        location.reload();
+                        limparCampos();
                     }
                 }
                
@@ -117,12 +105,12 @@ class JogodaVelha
                     if(cel9 == "x" || cel9 == "X")
                     {
                         window.alert(player1 + " é o VENCEDOR" );
-                        location.reload();
+                        limparCampos();
                     }
                     else if (cel9 == "o" || cel9 == "O")
                     {
                         window.alert(player2 + " é o VENCEDOR" );
-                        location.reload();
+                        limparCampos();
                     }
                 }
 
@@ -134,12 +122,12 @@ class JogodaVelha
                     if(cel9 == "x" || cel9 == "X")
                     {
                         window.alert(player1 + " é o VENCEDOR" );
-                        location.reload();
+                        limparCampos();
                     }
                     else if (cel9 == "o" || cel9 == "O")
                     {
                         window.alert(player2 + " é o VENCEDOR" );
-                        location.reload();
+                        limparCampos();
                     }
                 }
 
@@ -149,12 +137,12 @@ class JogodaVelha
                     if(cel7 == "x" || cel7 == "X")
                     {
                         window.alert(player1 + " é o VENCEDOR" );
-                        location.reload();
+                        limparCampos();
                     }
                     else if (cel7 == "o" || cel7 == "O")
                     {
                         window.alert(player2 + " é o VENCEDOR" );
-                        location.reload();
+                        limparCampos();
                     }
                 }
 
@@ -170,10 +158,28 @@ class JogodaVelha
                          cel9 !="" )
                          {
                             window.alert("FIM DO JOGO : Deu Velha");
-                            location.reload();
+                            limparCampos();
                         }
-            }, 50);
-    }
-} 
 
-var comparar = new JogodaVelha();
+
+    }, 50);//Fim do Set
+
+}//Fim da Function
+
+function limparCampos()
+{
+    document.getElementById("cel1").value = "";
+    document.getElementById("cel2").value = "";  
+    document.getElementById("cel3").value = "";
+    document.getElementById("cel4").value = "";
+    document.getElementById("cel5").value = "";
+    document.getElementById("cel6").value = "";
+    document.getElementById("cel7").value = "";
+    document.getElementById("cel8").value = "";
+    document.getElementById("cel9").value = "";
+}
+
+function confereGanhador(ganhador)
+{
+    
+}

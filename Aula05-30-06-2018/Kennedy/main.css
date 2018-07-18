@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+}
+
+input{
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+
+div{
+    margin: auto;
+    width: 200px;
+    text-align: center;
+
+}
