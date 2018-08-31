@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Cadastro de Pessoa</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="cadastro.css" />
+</head>
+<body>
+    <div>
+        <h1>Cadastro de Pessoa</h1>
+    </div>
+    
+    <input type="text" placeholder="Nome" id="nomeCliente">
+    
+    <div>
+        <input type="text" placeholder="Idade" id="idadeCliente">
+        <input type="text" placeholder="Altura" id="alturaCliente">
+        <input type="text" placeholder="Peso" id="pesoCliente">
+    </div>
+    
+    <input type="text" placeholder="Cor dos Olhos" id="corOlhos">
+    <button onclick="controller.salvar()" id="salvar">salvar</button>
+        
+    <div>
+        <button onclick="controller.falar()" id="falar" hidden>Falar</button>
+        <button onclick="controller.correr()" id="correr" hidden>Correr</button>
+        <button onclick="controller.andar()" id="andar" hidden>Andar</button>
+    </div>
+
+    <script src="pessoa.js"></script>
+    <script src="controller-cadastro.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Lista</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    <h1>Lista de Alunos HT</h1>
+
+    <input type="text" placeholder="Nome do Aluno" id="nome">
+    <input type="number" placeholder="Posição" id="inputPosicao" >
+
+    <div>
+    <button style="background-color: #419D52"onclick="lista.adicionarInicio()">Adicionar no inicio</button>
+    <button style="background-color: #6433B0"onclick="lista.adicionarPosicao()">adicionar na Posicao</button>
+    <button style="background-color: #687476"onclick="lista.adicionarFinal()">Adicionar no final</button>
+    <button style="background-color: rgb(241, 37, 10)" onclick="lista.remover()">Remover</button>
+    <!--<button  onclick="lista.teste()">botao teste</button>-->
+    
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+
+div{
+    background-color: rgb(246, 246, 250);
+    border: 2px solid rgb(17, 16, 16);
+    color: rgb(12, 10, 10);
+    width: 75px;
+    /*height: 50%;*/
+    margin-bottom: 10px;
+    float: left;
+    margin-left: 10px;
+}

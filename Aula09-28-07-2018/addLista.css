@@ -1,0 +1,44 @@
+body{
+    background-color: lightgrey;
+    font-family:  'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+input
+{
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    height: 20px;
+}
+
+div{
+    margin-top: 5px;
+}
+
+button{
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+h1{
+    font-family: Impact, fantasy;
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+#botaoOrdenar{background-color:#029BEA}
+#botaoImpar{background-color:#FC8C00}
+#botaoPar{background-color:#E63935}
+
+#botaoOrdenar:disabled{ background: #dddddd;}
+#botaoImpar:disabled{ background: #dddddd;}
+#botaoPar:disabled{ background: #dddddd;}
+
+   

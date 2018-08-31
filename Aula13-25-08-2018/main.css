@@ -1,0 +1,96 @@
+body{
+    
+    background-image: url('http://images2.fanpop.com/image/photos/13600000/Dog-wallpaper-dogs-13632654-1280-800.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img
+{
+    width: 30%;
+}
+.cadastro
+{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: beige;
+    background: black;
+    width: 30%;
+    margin-left: 200px; 
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.divInput
+{
+    background: #FBE52B;
+    margin: auto;
+    padding-top: 20px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+input{
+    border-radius: 10px;
+    width: 50%;
+    height: 20px;
+    text-align: center;
+}
+
+
+/*Formatação do Título*/
+h2{
+    font-family: Arial, Helvetica, sans-serif;/*Estilo da letra*/
+    font-size: 20px;/*Tamanho da fonte*/
+    color: #3B4C5D;
+    font-weight: 300px;/*peso da fonte*/
+}
+
+.top{top:0}
+
+.barraSup{width:100%;
+    overflow:hidden;
+    display:inline-block;
+    width:auto;
+    color:#000!important;/*ao clicar*/
+    background-color:#fff!important;
+    letter-spacing:4px;
+    padding:8px 16px!important;
+}
+
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    float: right!important;
+    /*padding:8px 16px;*/
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right!important;
+    color: #181616;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing:4px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ccc;
+    color: rgb(17, 16, 16);/*cor da letra*/
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color:  white;
+    color: rgb(7, 6, 6);
+}
+
+
+
+
+

@@ -1,0 +1,33 @@
+body{
+    
+    background-image: url('http://static.elmundo.sv/wp-content/uploads/2016/09/aventura.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button{
+	width: 300px;
+	height: 40px;
+	background: transparent;
+	border: 2px solid rgba(255,255,255,0.6);
+	border-radius: 20px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 600px;
+    cursor: pointer;
+    font-weight: bold;}
+
+    a:hover button
+    {
+        background: #FEB825;
+        color: black;
+        font-weight: bold;
+    }
+
+    table, th, td {
+        border: 30px solid black;}

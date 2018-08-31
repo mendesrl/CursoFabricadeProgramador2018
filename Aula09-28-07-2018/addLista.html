@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Lista</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="addLista.css" />
+    
+</head>
+<body>
+    <h1>Lista</h1>
+
+    <input type="number" placeholder="Informe um numero para adicionar na lista" id="numeroInserido">
+
+    <div>
+    <button style="background-color:#459E4B"onclick="lista.adicionar()">Adicionar</button>
+    <button id="botaoOrdenar" onclick="lista.ordenar()" disabled>Ordenar</button>
+    <button id="botaoImpar" onclick="lista.numerosImpares()" disabled>Impar</button>
+    <button id="botaoPar" onclick="lista.numerosPares()"disabled>Par</button>
+    <!--<button  style="background-color:rgb(170, 32, 163)"  onclick="lista.novaLista()">Pares e Impares</button>-->
+    </div>
+
+    <script src="addLista.js"></script>
+</body>
+</html>
