@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" media="screen" href="produto.css" />
+</head>
+<body>
+    <div id="body">
+    <div id="boxLogin"><!--Bloco Branco--> 
+        <div id="form">
+                <div id="esconde" hidden>
+                        <button type="button"><a href="produto.html">Cadastrar outro Produto</button></a>
+                </div>
+            <div class="login-form" id="div1">
+                <h1>Cadastro de Produtos</h1>
+                <input type="text" placeholder="Nome do Produto" id="nome">
+                <label id="labelQTD">Quantidade:</label><input type="number" id="qtd" class="qtd">
+                <label>Preço:</label><input type="text" id="preco" class="preco">
+
+                <select id="categoria">
+                    <option value="">Categoria...</option>
+                    <option value="Corpo">Corpo</option>
+                    <option value="Rosto">Rosto</option>
+                    <option value="Cabelo">Cabelo</option>
+                    <option value="Unhas">Unhas</option>
+                    <option value="Maquiagem">Maquiagem</option>
+                </select>
+ 
+                <input type="text" placeholder="Link da Imagem" id="linkfoto"><br>
+                <button onclick="controller.salvar()">Salvar</button><br><br>
+            </div>
+        </div>
+    </div><br>
+
+    <div id="box1">
+
+
+    </div>
+
+    <div id="divMae">
+
+
+    </div>
+</div>
+</div>
+    <script src="produtos.js"></script>
+    <script src="produto.js"></script>
+    <script src="controller-pdt.js"></script>
+</body>
+</html>
+
+
+    

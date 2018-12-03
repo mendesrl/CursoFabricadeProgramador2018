@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Cadastro de Usuario</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../cadastrarUsuario/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/organicfoodicons.css" />
+	<link rel="stylesheet" type="text/css" href="../css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="../css/component.css" />
+    
+</head>
+
+<body>
+     <!-- HEADER -->
+    <div class="container">
+        <header class="bp-header cf">
+            <div class="dummy-logo">
+                <img class="dummy-icon foodicon foodicon--coconut" src="https://scontent.fbsb12-1.fna.fbcdn.net/v/t1.0-9/41924149_285569572049061_7443182837978628096_n.jpg?_nc_cat=0&oh=b7aaeeebf78c13e5fbd2f288490e4f33&oe=5C1E86ED" 
+                 alt="Logo da Laris Cosmeticos"
+                 height="50" width="50">
+				<h2 class="dummy-heading">Laris Cosméticos</h2>
+			</div>
+    
+    <!-- MENU -->
+    <nav><!--Utilizado para links-->
+        <h2>Menu</h2>
+        <ul><!--Lista de links-->
+            <li ><a href="">Usuarios Cadastrados</a></li>
+            <li ><a href="">Cadastrar Produto</a></li>
+            <li ><a href="">Cadastrar Cliente</a></li>
+            <li ><a href="">Estoque</a></li>
+            <li ><a href="">Vendas</a></li>
+            <li ><a href="">Sair</a></li>
+        </ul>
+    </nav>
+   
+     <!-- Cadastro de usuario -->
+    <main>
+        <div class="boxLogin">
+            <form class="form">
+                <h1>Cadastro de Usuario</h1>
+                <input type="text" placeholder="Nome" id="nome">
+                <input type="email" placeholder="E-mail" id="email">
+                
+                <div class="radio">
+                    <label for="MASC">Masculino</label>
+                    <input type="radio" name="sexo" id="MASC">
+                    <label for="FEM">Feminino</label>
+                    <input type="radio" name="sexo" id="FEM">
+                    <label class="data" for="data">Data Nascimento</label>
+                    <input class="data" type="date" id="data">
+                </div>
+                
+                <input type="text" placeholder="CPF" id="cpf">
+                <input type="text" placeholder="Telefone" id="tel">
+                <input type="text" placeholder="Endereço" id="endereco">
+
+                <input type="text" placeholder="Cadastre uma senha" id="senha">
+                <label for="cargo">Cargo:</label>
+                <select id="cargo">
+                        <option value="">Selecionar...</option>
+                        <option value="gerente">Gerente</option>
+                        <option value="funcionario">Funcionário</option>
+                </select>
+                <br><br>
+
+                <div>
+                    <button type="button" onclick="controller.salvar()">Salvar</button>
+                </div>
+            
+            </form>  
+
+        </div>
+    </main>
+
+
+    <script src="../js/pessoa.js"></script>
+    <script src="../js/usuario.js"></script>
+    <script src="controller-cadastro.js"></script>
+</body>
+</html>

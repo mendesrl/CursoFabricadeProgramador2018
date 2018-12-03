@@ -17,15 +17,13 @@ class ControllerCadastro
         this.validar();
     }
 
-   
-
     validar()
     {
         if(this.pessoa.nome==""){alert("O campo Nome não está preenchido, Por favor verifique...");}    
-        if(this.pessoa.idade==""){alert("O campo Idade não está preenchido, Por favor verifique...");}
-        if(this.pessoa.altura==""){alert("O campo Altura não está preenchido, Por favor verifique...");}
-        if(this.pessoa.peso==""){alert("O campo Peso não está preenchido, Por favor verifique...");}
-        if(this.pessoa.cordosOlhos==""){alert("O campo Cor dos Olhos não está preenchido, Por favor verifique...");}
+        else if(this.pessoa.idade==""){alert("O campo Idade não está preenchido, Por favor verifique...");}
+        else if(this.pessoa.altura==""){alert("O campo Altura não está preenchido, Por favor verifique...");}
+        else if(this.pessoa.peso==""){alert("O campo Peso não está preenchido, Por favor verifique...");}
+        else if(this.pessoa.cordosOlhos==""){alert("O campo Cor dos Olhos não está preenchido, Por favor verifique...");}
         
         else{
             //remover o botão Salvar

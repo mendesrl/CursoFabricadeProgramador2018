@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body
+{
+  background-color: #b653f0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,h2{
+    color: #b653f0;
+  }
+
+.card
+{
+    background-color: white;
+    width: 30%;
+    margin: auto;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px gray;
+    padding: 30px;
+    padding-bottom: 10px;
+}
+
+.card-title
+{
+    font-weight: bold;
+    text-align: center;
+    
+    
+}
+
+.card-form input
+{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 12px;
+    padding: 10px 2px;
+}
+
+.card-action button
+{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    border: none;
+    padding: 15px;
+    font-size: 12px;
+    margin: 20px 0px 0px 0px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transform: .3s;
+    background:#ba5af1;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+
+#qtd
+{
+    
+    font-size: 13px;
+
+}
+
+.item-lista
+{
+    padding:  10px 20px;
+}
+
+.item-lista img{
+    width: 20px;
+    float: right;
+}
+
+button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background:#ba5af1;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }

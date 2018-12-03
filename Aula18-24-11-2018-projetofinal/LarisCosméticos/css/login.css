@@ -1,0 +1,66 @@
+/*Corpo*/
+body{
+    background-image: url('http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/Desktop-Wallpaper-4.jpg');
+    /*background-size: cover;*/
+}
+
+/*Formatação da Imagem*/
+img{
+
+    width: 40%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+/*Formatação do Título*/
+h1{
+    font-family: Arial, Helvetica, sans-serif;/*Estilo da letra*/
+    font-size: 40px;/*Tamanho da fonte*/
+    color: rgb(95, 95, 95);
+    font-weight: 300;/*peso da fonte*/
+}
+
+/*Caixa de login*/
+.box1{
+    background-color: rgba(227, 224, 228, 0.589);
+    width: 40%;
+    margin: auto;/*alinha a div ao centro*/
+    margin-top: 50px; /*Distancia do body a div no topo*/
+    text-align: center;/*Alinha texto*/
+    padding-bottom: 60px;
+    border: 1px solid rgba(255,255,255,0.6);
+}
+
+/*Formatação dos inputs*/
+input{
+    height: 30px;
+    width: 80%;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;/*Estilo da letra*/
+}
+
+/*Formatação do botão de login*/
+.buttonLogin{
+    background-color: rgb(37, 37, 179);
+    color: white;
+    width: 80%;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;/*Estilo da letra*/
+}
+
+/*Formatação de links*/
+a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;/*Estilo da letra*/
+    font-size: small;
+   
+}
+/*Formatação do Alerta*/
+#alert {
+    padding: 10px;
+    background-color: #f44336;
+    color: rgb(14, 4, 4);
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;/*Estilo da letra*/
+}
+

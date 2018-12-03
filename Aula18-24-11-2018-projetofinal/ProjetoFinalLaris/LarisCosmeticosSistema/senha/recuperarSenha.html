@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Recuperar Senha</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="recuperarSenha.css" />
+    
+</head>
+<body>
+    <div class="boxLogin"><!--Bloco Branco--> 
+        <div class="form">
+            <h2>Esqueceu sua senha? Não tem problema!</h2>
+            <div class="login-form" id="div1">
+                <p class="message">Entre com um email válido:</p><br>
+                <input type="email" placeholder="​someone@example.com" id="email">
+    
+                <button onclick="controller.enviarEmail()" id="entrar">Enviar</button>
+                <a href="index.html">voltar</a>
+
+            </div>
+        </div>
+    </div>
+   
+
+    <script src="../js/pessoa.js"></script>
+    <script src="../js/usuario.js"></script>
+    <script src="controller-senha.js"></script>
+</body>
+</html>

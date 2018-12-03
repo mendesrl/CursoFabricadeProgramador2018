@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    
+    <div class="card">
+        <h2 class="card-title">Adicionar Participante</h2>
+        <div class="card-form">
+            <input type="text" id="inputConvidado" placeholder="Nome Completo">
+        </div>
+        <div class="card-action"> 
+            <button type="button" onclick="lista.adicionar()">Adicionar</button>
+        </div>
+    </div><br><br>
+
+    <div class="card" id="esconde" hidden>
+        <h2 class="card-title">Lista de Participantes</h2>
+        <div id="qtd"> Qtd: <label id="labelQtd"></label></div>
+        
+        <div id="lista">
+        </div>
+        
+        <button  id="btn" onclick="controller.imprimir()">Imprimir MOAI</button>
+        <div></div>
+    </div>
+    
+    <script src="lista.js"></script>
+    <script src="imprimir.js"></script>
+    
+</body>
+</html>

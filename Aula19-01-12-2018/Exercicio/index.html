@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    </head>
+
+    <body>
+
+    <div id="pessoa">
+        <h2>Dados Pessoais</h2>
+        <div id="dados">
+            <h3>{{nome}}</h3>
+            <span>CPF: {{cpf}}</span><br>
+            <span>RG: {{rg}}</span><br>
+            <span>Data: {{dataNasc}}</span><br>
+            <span>Idade: {{-(dataNasc.substring(dataNasc.length - 4))+2018}}</span><br> 
+            <span>Telefone: {{tel}}</span><br> 
+            <span>Celular: {{cel}}</span><br>
+            <span>Email: {{email}}</span><br>
+            <span>Mae: {{mae}}</span><br>
+            <span>Pai: {{pai}}</span><br>
+        </div>
+        <fieldset>
+            <legend>Endereço</legend>
+                <span>Rua:{{endereco.rua}}</span><br>
+                <span>Nº:{{endereco.num}}</span><br>
+                <span>CEP:{{endereco.cep}}</span><br>
+                <span>Cidade:{{endereco.cidade}}</span><br>
+                <span>UF: {{endereco.uf}}</span><br>
+        </fieldset>
+        <fieldset>
+            <legend>Saúde</legend>
+                <span>Peso: {{saude.peso}}kg</span><br>
+                <span>Altura: {{saude.altura}}m</span><br>
+                <span>IMC: {{(saude.peso/((saude.altura)*(saude.altura))).toFixed(2)}}</span><br>
+        </fieldset>
+   </div>
+
+
+
+
+
+    <script src="index.js"></script>
+    </body>
+</html>

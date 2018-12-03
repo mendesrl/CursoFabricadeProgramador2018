@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+img
+{
+    width: 3%;
+    margin-top: 20px;
+   
+}
+
+h1{
+    color: #b653f0;
+    text-align: center;
+}
+
+body
+{
+  
+  font-family: "Roboto", sans-serif;
+}
+
+h3
+{
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background:#ba5af1;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+#nome , #qtd ,  #img , #preco
+{
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #FFFFFF;
+  padding: 15px;
+  color: rgb(29, 27, 27);
+  font-size: 14px;
+  float: left;
+  margin-right: 150px;
+ 
+}
+
+#qtd
+{
+    margin-top: 10px;
+}
+
+#imglinkfoto
+{
+    width: 5%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  
+}
+
+h3 label
+{
+    margin-left: 200px;
+}
+
+
+.divFormat
+{
+    width: 70%;
+    height: 50px;
+    float: left;
+    padding: 10px;
+    margin-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 18px;
+   
+}

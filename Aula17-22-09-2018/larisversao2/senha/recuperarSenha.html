@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Recuperar Senha</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="recuperarSenha.css" />
+    
+</head>
+<body>
+    <div id="boxLogin"><!--Bloco Branco--> 
+        <div id="form">
+                <img src="https://scontent.fbsb12-1.fna.fbcdn.net/v/t1.0-9/41924149_285569572049061_7443182837978628096_n.jpg?_nc_cat=0&oh=b7aaeeebf78c13e5fbd2f288490e4f33&oe=5C1E86ED" 
+                alt="Logo da Laris CosmÃ©ticos"
+                height="80" width="80">
+            <h2>Esqueceu sua senha? Não tem problema!</h2>
+            <div>
+                <p id="message">Entre com um email válido:</p><br>
+                <input type="email" placeholder="​someone@example.com" id="email">
+    
+                <button onclick="controller.enviarEmail()" id="entrar">Enviar</button>
+                <a href="../index.html">voltar</a>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/pessoa.js"></script>
+    <script src="../js/usuario.js"></script>
+    <script src="controller-senha.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" media="screen" href="usuario.css" />
+</head>
+<body>
+    <div id="boxLogin"><!--Bloco Branco--> 
+        <div id="form">
+            <div class="login-form" id="div1">
+                    <h1>Cadastro de Usuario</h1>
+                <input type="text" placeholder="Nome" id="nome">
+                <input type="text" placeholder="CPF" id="cpf">
+                <input type="text" placeholder="Telefone" id="tel">
+                <input type="text" placeholder="Endereço" id="endereco">
+                <input type="text" placeholder="Email" id="email">
+                
+                <input type="text" placeholder="Foto" id="linkfoto">
+                <select id="cargo">
+                    <option value="">Selecionar...</option>
+                    <option value="Gerente">Gerente</option>
+                    <option value="Atendente">Atendente</option>
+                    <option value="Operador">Operador</option>
+                </select>
+
+                <input type="password" placeholder="Senha" id="senha">
+                
+                <button onclick="controller.salvar()">Salvar</button>
+               
+            </div>
+        </div>
+    </div><br>
+
+
+    <div id="box1">
+
+
+    </div>
+
+    <div id="divMae">
+
+
+    </div>
+</div>
+    <script src="../js/pessoa.js"></script>
+    <script src="usuarios.js"></script>
+    <script src="usuario.js"></script>
+    <script src="controller-usuario.js"></script>
+</body>
+</html>
+
+
+    

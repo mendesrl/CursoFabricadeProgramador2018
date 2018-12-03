@@ -1,0 +1,55 @@
+body{
+    background-image: url("https://pt.best-wallpaper.net/wallpaper/1920x1080/1705/Purple-color-abstract-space_1920x1080.jpg");
+    text-align: center;
+    
+}
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    /*border-bottom: 1px  solid #d3d3d360;*/
+    
+}
+
+div {
+    padding: 150px;
+    text-align: center;
+}
+
+.pp{
+    text-align: center;
+    padding: 0;
+    width: 400px;
+    border-top: 1px  solid #d3d3d360;
+    text-align: center;
+    margin: auto;
+}
+
+p{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+button{
+	width: 100px;
+	height: 30px;
+	background: transparent;
+	border: 2px solid rgba(255,255,255,0.6);
+	border-radius: 20px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+cursor: pointer;}
+
+img{border-radius: 150px;}
+
+a{color: white;
+padding-right: 20px;}
