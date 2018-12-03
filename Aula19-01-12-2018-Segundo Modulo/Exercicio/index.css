@@ -1,0 +1,20 @@
+h2{
+    background-color: midnightblue;
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+body{
+    background-color: rgb(49, 219, 126);
+    color: white;
+    font-weight: bold;
+    text-align: justify;
+    margin: 0;
+}
+
+div #dados
+{
+   
+   margin-left: 10px;
+}
