@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div id="mario">
+            <span v-if=" verMario == false">Deseja ver Mario?</span>
+            <span v-if=" verMario == true">Continuar vendo Mario?</span>
+            <div>
+                <span>Sim</span>
+                <input type="radio" name="verMario" v-model="verMario" v-bind:value="true">
+                <span>Não</span>
+                <input type="radio" name="verMario" v-model="verMario" v-bind:value="false">
+            </div>
+            <div v-if=" verMario ">
+                <img v-bind:src="imagem">
+            </div>
+        </div>
+    <script src="index.js"></script>
+    </body>
+</html>

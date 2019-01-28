@@ -1,0 +1,155 @@
+/* Todo o css do componente brawler deve ficar neste arquivo */
+
+
+#boxBrawlers
+{
+    position: absolute;
+    margin-left: 30px;
+    width: 600px;
+    height: 500px;
+    border: 2px solid rgb(8, 8, 8);
+    right: 400;
+}
+
+#tituloConteudo1
+{
+    
+    background-color: #3C58E7;
+}
+
+h2{
+    margin: 0;
+}
+
+.teste
+{
+   width: 200px;
+   height: 200px;
+   float: left;
+}
+
+.barra
+{
+    padding: 0;
+    margin: 0;
+}
+
+.barraMarromp
+{
+    margin-top: 12px;
+    background-color: 	#4F032A;
+    width: 25%;
+    height: 8px;
+    position: absolute;
+    padding-top: 11px;
+    margin-left: 25px;
+}
+
+.barraLaranja 
+{
+    margin-top: 12px;
+    background-color: #E1672C;
+    width: 50px;
+    height: 8px;
+    position: absolute;
+    padding-top: 11px;
+    margin-left: 25px;
+}
+
+.imagemPoder
+{
+    position:relative; 
+    top:0px; 
+    left:0px;
+    height: 103px;
+}
+
+.img{
+    width: 150px;
+    align-items: center;
+    
+}
+
+.poder
+{
+    position: absolute;
+    background-color: black;
+    position:absolute; 
+    top:90px; 
+    left:62%;
+    font-size: 10px;
+    width: 50px;
+}
+
+
+.trofeu
+{
+    margin-top: 15px;
+    width: 15px;
+    position: relative;
+    align-items: center;
+}
+
+.barraRosa
+{
+    background-color: #3B253A;
+    padding: 0;
+    margin: 0;
+    width: 75%;
+    height: 50px;
+    margin-left: 25px;
+    position: relative;
+    
+}
+
+.barraMarromg
+{
+    width: 75%;
+    height: 20px;
+    background-image:linear-gradient(#4F032A, rgb(105, 8, 58));
+    -ms-transform: skewY(20deg); /* IE 9 */
+    -webkit-transform: skewY(20deg); /* Safari 3-8 */
+    transform: skewX(-20deg);
+    border: 2px solid black;
+    margin-left: 25px;
+    position: absolute;
+    margin-top: 5px;
+    padding-top: 11px;
+}
+
+.barraRosap
+{
+    width: 55%;
+    height: 20px;
+    background-image:linear-gradient(rgb(207, 188, 198),#F96FF4);
+    -ms-transform: skewY(20deg); /* IE 9 */
+    -webkit-transform: skewY(20deg); /* Safari 3-8 */
+    transform: skewX(-20deg);
+    margin-left: 30px;
+    position: absolute;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.pontospoder1
+{
+    margin-top: 15px;
+    width: 39px;
+    position: relative;
+    right: 35%;
+    bottom: 12px;
+}
+
+.textoPontos
+{
+    margin-top: 15px;
+    width: 15px;
+    align-items: center;
+    font-size: 10px;
+    position:absolute; 
+    top: 5px; 
+    left: 42%;
+    font-style: italic;
+}
+
+

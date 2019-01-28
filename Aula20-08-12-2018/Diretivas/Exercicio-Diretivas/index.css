@@ -1,0 +1,32 @@
+h3{
+    background-color: rgb(42, 147, 233);
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div
+{
+    text-align: left;
+    width: 40%;
+    margin: auto;
+    position: relative;
+
+}
+
+
+#imagem {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    opacity: 0.4;
+}
+
+#imagem img{
+    margin-top: 20%;
+}

@@ -1,0 +1,74 @@
+/* Todo o css da tela principal (index.html) deve ser feito neste arquivo */
+body
+{
+    background-image: linear-gradient(-90deg, #23559B, #1F4190);
+    background-size:cover;
+    text-align: center;
+    color: blanchedalmond;
+    letter-spacing: 1px;
+}
+
+
+#imgCapa
+{
+    position:relative; 
+    top:0px; 
+    left:0px;
+    
+}
+
+/*Por padrão, um elemento que contém position:absolute se sobrepõe ao outro no código.*/
+#imgLogo
+{
+    position:absolute; 
+    top:10px; 
+    left:33%;
+}
+
+h3
+{
+    color: blanchedalmond;
+}
+
+
+#pagamento
+{
+    position: relative;
+    width: 164px;
+    height: 40px;
+    left:83%;
+   
+    
+}
+
+#imgMoeda
+{
+    position: absolute;
+    right: 400;
+    width: 80px;
+    height: 30px;
+    background-color: #0D0C21;
+    
+}
+#imgGema
+{
+    position: absolute;
+    right: 0;
+    width: 80px;
+    height: 30px;
+    background-color: #0D0C21;
+}
+
+.imgPagamento
+{
+    padding: 5px;
+}
+
+#conteudo
+{
+    position: relative;
+    width: 96%;
+    height: 1000px;
+    
+}
+

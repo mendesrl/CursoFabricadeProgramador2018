@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <link rel="stylesheet" href="termos.css">
+    </head>
+
+    <body>
+        <h3>Fabrica de Programador</h3>
+
+        <div id="terms">
+            <ol>
+                <h2>Termo de Uso</h2>
+                <!-- v-bind atributos especiais providos pelo Vue-->
+                <todo-item
+                v-for="item in topicList "
+                v-bind:todo="item"
+                v-bind:key="item.id">
+                </todo-item>
+            </ol>  
+        </div>
+    <script src="termos.js"></script>
+    </body>
+</html>

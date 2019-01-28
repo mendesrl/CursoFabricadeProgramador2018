@@ -1,15 +1,81 @@
 <html>
     <head>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-       
     </head>
-
+<!--Exemplo1-->
     <body>
     <div id="app">
-        <span>
             {{mensagem}}
-        </span>
     </div>
+
+
+
+
+<!--Exemplo2-->
+<div id="app-2">
+    <span v-bind:title="mensagem">
+        Pare o mouse em mim e veja a dica interligada dinamicamente!
+    </span>
+</div>
+
+<!--Exemplo3-->
+<div id="app-3">
+    <p v-if="seen">Agora você me viu</p>
+</div>
+
+<!--Exemplo4-->
+<div id="app-4">
+    <ol>
+        <li v-for="todo in todos">
+            {{todo.text}}
+        </li>
+    </ol>
+</div>
+
+<!--Exemplo5 - Tratando interação do usuario-->
+<div id="app-5">
+    <p>{{ message }}</p>
+    <button v-on:click="reverseMensagem">Inverter Mensagem</button>
+</div>
+
+<!--Exemplo6 - Two-way binding-->
+<div id="app-6">
+    <p>{{mensagem}}</p>
+    <input v-model="mensagem">
+</div>
+
+<!--Exemplo7 - Componentes-->
+<div id="app-7">
+    <ol>
+        <todo-item
+        v-for="item in groceryList"
+        v-bind:todo="item"
+        v-bind:key="item.id">
+        </todo-item>
+    </ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div id="calc">
         <span>Soma:</span>

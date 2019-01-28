@@ -1,0 +1,100 @@
+/* Todo o css do componente oferta deve ficar neste arquivo */
+#boxOfertas
+{
+    position: absolute;
+    right: 0;
+    width: 630px;
+    height: 500px;
+    border: 2px solid rgb(8, 8, 8);
+  
+}
+
+
+#tituloConteudo2
+{
+    
+    background-color: #9C02D6;
+}
+
+h2{
+    margin: 0;
+}
+
+.oferta
+{
+    width: 200px;
+    height: 200px;
+    float: left;
+    position: relative;
+}
+
+.boxAzul
+{
+    background-color: #42A7FF;
+    position: absolute;
+    width: 180px;
+    height: 170px;
+    top: 10px;
+    left: 25px;
+    cursor: pointer;
+}
+
+.imgOferta{
+    width: 150px;
+    position: absolute;
+    top: 25px;
+    right: 10%;
+    
+}
+
+.pontospodertri
+{
+    width: 180px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+}
+
+.nome
+{
+    position: absolute;
+    font-size: 10px;
+    width: 180px;
+    left: 0px;
+    top: 10px;
+}
+
+.pontospoderimg
+{
+    position: absolute;
+    width: 15px;
+    left: 70px;
+    top: 25px;
+}
+
+.pontospoder2
+{
+    position: absolute;
+    font-size: 13px;
+    width: 15px;
+    left: 85px;
+    top: 25px;
+}
+
+.retornamoeda
+{
+    position: absolute;
+    width: 15px;
+    left: 70px;
+    top: 135px;
+   
+}
+
+.retornamoedatexto
+{
+    position: absolute;
+    width: 15px;
+    left: 85px;
+    top: 135px;
+    font-size: 13px;
+}
