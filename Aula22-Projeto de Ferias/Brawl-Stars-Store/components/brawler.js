@@ -18,7 +18,8 @@ Vue.component('brawler',{
     'pontospoderimg',
     'pontospoder',
     'totalpontospoder',
-    'tamanho'
+    'tamanho',
+    'tamanhodois',
     ],
     template:
         `<div class="teste">
@@ -39,7 +40,8 @@ Vue.component('brawler',{
 
             <div class="barraRosa">
                 <div class="barraMarromg"></div>
-                <div class="barraRosap"></div>
+                <div class="barraRosap"
+                :style="'width: '+ tamanhodois + '%;'"></div>
                 <img :src= "pontospoderimg" class="pontospoder1">
                 <span class="textoPontos">{{pontospoder}}/{{totalpontospoder}}</span>
             </div>

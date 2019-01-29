@@ -6,6 +6,7 @@ var app = new Vue({
         titulo: 'Encontre itens incriveis para deixar seu brawler mais forte!',
         saldomoeda: 100,
         saldogema: 15,
+        x: 0,
         brawlers : [
             {
                 id: 1,
@@ -178,11 +179,55 @@ var app = new Vue({
 
         },
 
+        tamanhodois (index) 
+        {
+            if ( this.brawlers[index].id === 1 )
+            {
+               var x =0;
+               x= ((70*this.brawlers[index].pontosPoder)/(this.brawlers[index].totalPontosPoder));
+                return x
+            }
+
+            else if ( this.brawlers[index].id === 2)
+            { 
+                var x =0;
+                x= ((70*this.brawlers[index].pontosPoder)/(this.brawlers[index].totalPontosPoder));
+                 return x
+            }
+
+            else if ( this.brawlers[index].id === 3)
+            { 
+                var x =0;
+                x= ((70*this.brawlers[index].pontosPoder)/(this.brawlers[index].totalPontosPoder));
+                 return x
+            }
+
+            else if ( this.brawlers[index].id === 4)
+            { 
+                var x =0;
+                x= ((70*this.brawlers[index].pontosPoder)/(this.brawlers[index].totalPontosPoder));
+                 return x
+            }
+
+            else if ( this.brawlers[index].id === 5)
+            { 
+                var x =0;
+                x= ((70*this.brawlers[index].pontosPoder)/(this.brawlers[index].totalPontosPoder));
+                 return x
+            }
+
+            else if ( this.brawlers[index].id === 6)
+            { 
+                var x =0;
+                x= ((70*this.brawlers[index].pontosPoder)/(this.brawlers[index].totalPontosPoder));
+                 return x
+            }
+
+        },
+
         comprar(index)
         {
-            
-                
-                if (this.ofertasDiarias[index].moeda === 'moeda'&& 
+            if (this.ofertasDiarias[index].moeda === 'moeda'&& 
                 this.ofertasDiarias[index].id !== 5 &&
                 this.saldomoeda > 0)
                 {
@@ -190,6 +235,29 @@ var app = new Vue({
                     if (this.saldomoeda >= this.ofertasDiarias[index].valor )
                     {
                         this.saldomoeda = auxiliar - (this.ofertasDiarias[index].valor);
+
+                        var arr = this.brawlers;
+                        for(var i=0; i<arr.length; i++)
+                        {
+                            if(arr[i].imagem === this.ofertasDiarias[index].imagem)
+                            {
+                                var auxi = arr[i].pontosPoder;
+                                arr[i].pontosPoder = auxi + this.ofertasDiarias[index].pontosPoder;
+                                this.x = parseInt((70*arr[i].pontosPoder)/arr[i].totalPontosPoder);
+                                
+                                
+                                if(arr[i].pontosPoder > arr[i].totalPontosPoder)
+                                {
+                                    var teste = arr[i].totalPontosPoder;
+                                    arr[i].pontosPoder = teste;
+                                    this.x = parseInt((70));                                   
+                                }
+                                
+                                
+                            }
+
+                           
+                        }
 
 
                     }
@@ -199,7 +267,26 @@ var app = new Vue({
 
                 else if (this.ofertasDiarias[index].moeda === 'moeda' && this.ofertasDiarias[index].id === 5)
                 {
-                    alert("isso é gratis")
+                    var arr = this.brawlers;
+                        for(var i=0; i<arr.length; i++)
+                        {
+                            if(arr[i].imagem === this.ofertasDiarias[index].imagem)
+                            {
+                                var auxi = arr[i].pontosPoder;
+                                arr[i].pontosPoder = auxi + this.ofertasDiarias[index].pontosPoder;
+                                this.x = parseInt((70*arr[i].pontosPoder)/arr[i].totalPontosPoder);
+                                
+                                
+                                if(arr[i].pontosPoder > arr[i].totalPontosPoder)
+                                {
+                                    var teste = arr[i].totalPontosPoder;
+                                    arr[i].pontosPoder = teste;
+                                    this.x = parseInt((70));                                   
+                                }
+                                
+                                
+                            }
+                        }
                 }
                 else if (this.ofertasDiarias[index].moeda === 'gema' && this.saldogema >0)
                 {
@@ -208,9 +295,31 @@ var app = new Vue({
                     {
                         this.saldogema = auxiliar - (this.ofertasDiarias[index].valor);
                         console.log(this.saldogema);
+
+                        var arr = this.brawlers;
+                        for(var i=0; i<arr.length; i++)
+                        {
+                            if(arr[i].imagem === this.ofertasDiarias[index].imagem)
+                            {
+                                var auxi = arr[i].pontosPoder;
+                                arr[i].pontosPoder = auxi + this.ofertasDiarias[index].pontosPoder;
+                                this.x = parseInt((70*arr[i].pontosPoder)/arr[i].totalPontosPoder);
+                                
+                                
+                                if(arr[i].pontosPoder > arr[i].totalPontosPoder)
+                                {
+                                    var teste = arr[i].totalPontosPoder;
+                                    arr[i].pontosPoder = teste;
+                                    this.x = parseInt((70));                                   
+                                }
+                                
+                                
+                            }
+
+                           
+                        }
                     }
-                    else
-                    alert("acabou suas gemas");
+                    
                 }
             
             
