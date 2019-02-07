@@ -37,6 +37,9 @@ h3
     width: 164px;
     height: 40px;
     left:83%;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
    
     
 }
@@ -48,6 +51,7 @@ h3
     width: 80px;
     height: 30px;
     background-color: #0D0C21;
+    
     
 }
 #imgGema
@@ -72,3 +76,10 @@ h3
     
 }
 
+.moedas
+{
+    
+   
+
+    
+}
