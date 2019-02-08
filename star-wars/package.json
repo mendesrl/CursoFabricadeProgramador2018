@@ -16,7 +16,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuetify": "^1.5.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -69,6 +70,7 @@
     "url-loader": "^0.5.8",
     "vue-jest": "^1.0.2",
     "vue-loader": "^13.3.0",
+    "vue-materialize": "^1.0.0",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",

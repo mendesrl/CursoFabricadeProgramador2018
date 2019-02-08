@@ -1,66 +1,120 @@
+<!--<template>-->
+<!--<div id="app">-->
+<!--<nav>-->
+<!--<div class="nav-wrapper blue darken-1">-->
+<!--<a href="#" class="brand-logo center">Produtos Front</a>-->
+<!--</div>-->
+<!--</nav>-->
+<!--<div class="container">-->
+<!--<form>-->
+<!--<v-form>-->
+<!--<v-container>-->
+<!--<v-layout>-->
+<!--<v-flex xs12 md4>-->
+<!--<input-text @input="getName" label="Nome"/>-->
+<!--</v-flex>-->
+<!--</v-layout>-->
+<!--<v-layout>-->
+<!--<v-flex xs12 md4>-->
+<!--<input-text @input="getQuantity" label="Quantidade"/>-->
+<!--</v-flex>-->
+<!--</v-layout>-->
+<!--</v-container>-->
+<!--</v-form>-->
+<!--<label>Quantidade</label>-->
+<!--<input type="number" placeholder="QTD">-->
+<!--<label>Valor</label>-->
+<!--<input type="text" placeholder="Valor">-->
+<!--<button class="waves-effect waves-light btn-small">Salvar<i class="material-icons left">save</i></button>-->
+<!--</form>-->
+<!--<table>-->
+<!--<thead>-->
+<!--<tr>-->
+<!--<th>NOME</th>-->
+<!--<th>QTD</th>-->
+<!--<th>VALOR</th>-->
+<!--<th>OPÇÕES</th>-->
+<!--</tr>-->
+<!--</thead>-->
+<!--<tbody>-->
+<!--<tr v-for="produto in produtos" :key="produto.id">-->
+<!--<td>{{ produto.name}}</td>-->
+<!--<td>{{ produto.climate}}</td>-->
+<!--<td>50.00</td>-->
+<!--<td>-->
+<!--<button class="waves-effect btn-small blue darken-1"><i class="material-icons">create</i></button>-->
+<!--<button class="waves-effect btn-small red darken-1"><i class="material-icons">delete_sweep</i></button>-->
+<!--</td>-->
+<!--</tr>-->
+<!--</tbody>-->
+<!--</table>-->
+<!--</div>-->
+<!--</div>-->
+<!--</template>-->
 <template>
-  <div id="app">
-    
-    <nav>
-      <div class="nav-wrapper black">
-        <a href="#" class="brand-logo center">Star Wars</a>
-      </div>
-    </nav>
-    <div class="container">
-      <div class="card-panel hoverable" v-for="filme in filmes.results" :key="filme.id">
-          <div>
-            <img src="https://lumiere-a.akamaihd.net/v1/images/solo-a-star-wars-story-theatrical-poster-2_f4af9297.jpeg?region=0%2C397%2C1298%2C646&width=600" width="500px" height="300px">
-          </div>
-          <div>
-            <div>
-              <h1>{{ filme.title }}</h1>
-            </div>
-            <div>
-              <span>{{ filme.opening_crawl }}</span>
-            </div>
-            <div>
-              <span>Ano de Lançamento:</span>
-              <span>{{ filme.release_date }}</span>
-            </div>
-            <div>
-              <span>Diretor:</span>
-              <span>{{ filme.director }}</span>
-          </div>
-      </div> 
-          
-      </div>
-
-      
-    </div>
-
+  <div>
+    <v-form v-model="valid">
+      <v-container>
+        <v-layout>
+          <v-flex xs12 md4>
+            <input-text @input="getName" label="Nome"/>
+          </v-flex>
+          <v-flex xs12 md4>
+            <input-text @input="getQuantity" label="Quantidade"/>
+          </v-flex>
+          <v-flex xs12 md4>
+            <input-text @input="getValue" label="Valor"/>
+          </v-flex>
+        </v-layout>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="green darken-3" @click="save">Save</v-btn>
+        </v-card-actions>
+        <div data-app>
+          <app-table :desserts="produtos"/>
+        </div>
+      </v-container>
+    </v-form>
   </div>
 </template>
-
 <script>
-import Filme from './services/filmes'
+import Produto from '@/services/produtos'
+import InputText from '@/components/AppInput/InputText'
+import AppTable from '@/components/AppTable/AppTable'
+
 export default {
-
-  data()
-  {
+  components: {InputText, AppTable},
+  data () {
     return {
-      filmes: []
-      
+      produtos: [],
+      product: {
+        name: '',
+        value: '',
+        quantidade: ''
+      }
     }
-    
   },
+  methods: {
+    save () {
 
-  mounted(){
-    Filme.listar('films').then(resposta =>{
-      this.filmes = resposta.data;
-      console.log(resposta.data);
+    },
+    getName (name) {
+      this.product.name = name
+    },
+    getQuantity (quantity) {
+      this.product.quantidade = quantity
+    },
+    getValue (value) {
+      this.product.value = value
+    }
+  },
+  mounted () {
+    Produto.listar().then(resposta => {
+      console.log(resposta.data.results)
+      this.produtos = resposta.data.results
     })
   }
-  
 }
 </script>
-
 <style>
-h1{
-  font-size: 2.2rem;
-}
 </style>
