@@ -58,28 +58,36 @@
         <app-toolbar :title="'Filmes do Star Wars'"/>
       </div>
     </v-container>
-    <v-form v-model="valid">
-      <v-container>
+    <v-container>
+      <div data-app>
         <v-layout>
-          <v-flex xs12 md4>
-            <input-text @input="getName" label="Nome"/>
-          </v-flex>
-          <v-flex xs12 md4>
-            <input-text @input="getQuantity" label="Quantidade"/>
-          </v-flex>
-          <v-flex xs12 md4>
-            <input-text @input="getValue" label="Valor"/>
-          </v-flex>
+          <app-card/>
+          <app-card/>
         </v-layout>
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn color="green darken-1" @click="save">Save</v-btn>
-        </v-card-actions>
-        <div data-app>
-          <app-table :desserts="produtos"/>
-        </div>
-      </v-container>
-    </v-form>
+      </div>
+    </v-container>
+    <!--<v-form v-model="valid">-->
+      <!--<v-container>-->
+        <!--<v-layout>-->
+          <!--<v-flex xs12 md4>-->
+            <!--<input-text @input="getName" label="Nome"/>-->
+          <!--</v-flex>-->
+          <!--<v-flex xs12 md4>-->
+            <!--<input-text @input="getQuantity" label="Quantidade"/>-->
+          <!--</v-flex>-->
+          <!--<v-flex xs12 md4>-->
+            <!--<input-text @input="getValue" label="Valor"/>-->
+          <!--</v-flex>-->
+        <!--</v-layout>-->
+        <!--<v-card-actions>-->
+          <!--<v-spacer></v-spacer>-->
+          <!--<v-btn color="green darken-1" @click="save">Save</v-btn>-->
+        <!--</v-card-actions>-->
+        <!--<div data-app>-->
+          <!--<app-table :desserts="produtos"/>-->
+        <!--</div>-->
+      <!--</v-container>-->
+    <!--</v-form>-->
   </div>
 </template>
 <script>
@@ -87,10 +95,11 @@ import InputText from '@/components/AppInput/InputText'
 import AppTable from '@/components/AppTable/AppTable'
 import AppToolbar from './components/AppToolbar/AppToolbar'
 import Http from 'axios'
+import AppCard from './components/AppCard/AppCard'
 
 const baseUrl = 'https://swapi.co/api/'
 export default {
-  components: {AppToolbar, InputText, AppTable},
+  components: {AppCard, AppToolbar, InputText, AppTable},
   data () {
     return {
       produtos: [],
