@@ -83,11 +83,12 @@
   </div>
 </template>
 <script>
-import Produto from '@/services/produtos'
 import InputText from '@/components/AppInput/InputText'
 import AppTable from '@/components/AppTable/AppTable'
 import AppToolbar from './components/AppToolbar/AppToolbar'
+import Http from 'axios'
 
+const baseUrl = 'https://swapi.co/api/'
 export default {
   components: {AppToolbar, InputText, AppTable},
   data () {
@@ -114,10 +115,11 @@ export default {
       this.product.value = value
     }
   },
-  mounted () {
-    Produto.listar().then(resposta => {
-      console.log(resposta.data.results)
-      this.produtos = resposta.data.results
+  created () {
+    Http.get(`${baseUrl}`)
+    Http.get(`${baseUrl}films/`).then(response => {
+      console.log(response)
+      this.produtos = response.data.results
     })
   }
 }
