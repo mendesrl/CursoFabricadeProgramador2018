@@ -53,6 +53,11 @@
 <!--</template>-->
 <template>
   <div>
+    <v-container>
+      <div data-app>
+        <app-toolbar :title="'Filmes do Star Wars'"/>
+      </div>
+    </v-container>
     <v-form v-model="valid">
       <v-container>
         <v-layout>
@@ -68,7 +73,7 @@
         </v-layout>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn color="green darken-3" @click="save">Save</v-btn>
+          <v-btn color="green darken-1" @click="save">Save</v-btn>
         </v-card-actions>
         <div data-app>
           <app-table :desserts="produtos"/>
@@ -81,9 +86,10 @@
 import Produto from '@/services/produtos'
 import InputText from '@/components/AppInput/InputText'
 import AppTable from '@/components/AppTable/AppTable'
+import AppToolbar from './components/AppToolbar/AppToolbar'
 
 export default {
-  components: {InputText, AppTable},
+  components: {AppToolbar, InputText, AppTable},
   data () {
     return {
       produtos: [],
