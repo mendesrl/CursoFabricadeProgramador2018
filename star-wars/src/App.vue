@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div id="app">
     <nav>
       <div class="nav-wrapper black">
@@ -45,9 +46,48 @@
         
       </div> 
     </div>
+=======
+  <div>
+    <v-container>
+      <div data-app>
+        <app-toolbar :title="'Filmes do Star Wars'"/>
+      </div>
+    </v-container>
+    <v-container>
+      <div data-app>
+        <v-layout>
+          <app-card/>
+          <app-card/>
+        </v-layout>
+      </div>
+    </v-container>
+    <!--<v-form v-model="valid">-->
+      <!--<v-container>-->
+        <!--<v-layout>-->
+          <!--<v-flex xs12 md4>-->
+            <!--<input-text @input="getName" label="Nome"/>-->
+          <!--</v-flex>-->
+          <!--<v-flex xs12 md4>-->
+            <!--<input-text @input="getQuantity" label="Quantidade"/>-->
+          <!--</v-flex>-->
+          <!--<v-flex xs12 md4>-->
+            <!--<input-text @input="getValue" label="Valor"/>-->
+          <!--</v-flex>-->
+        <!--</v-layout>-->
+        <!--<v-card-actions>-->
+          <!--<v-spacer></v-spacer>-->
+          <!--<v-btn color="green darken-1" @click="save">Save</v-btn>-->
+        <!--</v-card-actions>-->
+        <!--<div data-app>-->
+          <!--<app-table :desserts="produtos"/>-->
+        <!--</div>-->
+      <!--</v-container>-->
+    <!--</v-form>-->
+>>>>>>> e8496780e63cdd2b4ea9ebfa6da5d6c5b0d2268d
   </div>
 
 </template>
+<<<<<<< HEAD
 
 <script>
 import Filme from './services/filmes'
@@ -60,6 +100,19 @@ export default {
   data()
   {
     
+=======
+<script>
+import InputText from '@/components/AppInput/InputText'
+import AppTable from '@/components/AppTable/AppTable'
+import AppToolbar from './components/AppToolbar/AppToolbar'
+import Http from 'axios'
+import AppCard from './components/AppCard/AppCard'
+
+const baseUrl = 'https://swapi.co/api/'
+export default {
+  components: {AppCard, AppToolbar, InputText, AppTable},
+  data () {
+>>>>>>> e8496780e63cdd2b4ea9ebfa6da5d6c5b0d2268d
     return {
       filmes: [],
       pessoas: [],
@@ -69,6 +122,7 @@ export default {
     }
     
   },
+<<<<<<< HEAD
 
   mounted(){
     Filme.listar('films').then(resposta =>{
@@ -77,6 +131,13 @@ export default {
     Pessoas.listar('people').then(resposta =>{
       this.pessoas = resposta.data;
       console.log(resposta.data)
+=======
+  created () {
+    Http.get(`${baseUrl}`)
+    Http.get(`${baseUrl}films/`).then(response => {
+      console.log(response)
+      this.produtos = response.data.results
+>>>>>>> e8496780e63cdd2b4ea9ebfa6da5d6c5b0d2268d
     })
   }
   
