@@ -1,12 +1,12 @@
 <template>
-    <iframe
-      :src="idItem"
-      :width="tam" 
-      :height="tam" 
-      :frameborder="frame" 
-      :allow="allow" 
-      :allowfullscreen="allowfullscreen"
-    />
+  <iframe
+    :src="idItem"
+    :width="tam"
+    :height="tam"
+    :frameborder="frame"
+    :allow="allow"
+    :allowfullscreen="allowfullscreen"
+  />
 </template>
 <script type="text/javascript">
 export default {
@@ -34,6 +34,6 @@ export default {
       default: () => ('')
     },
   },
-  computed: {} 
+  computed: {}
 }
 </script>
